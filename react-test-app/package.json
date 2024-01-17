@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:coverage": "react-scripts test --coverage"
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,24 @@
     "@testing-library/react": "^14.1.2"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "@babel/runtime": "^7.23.8",
+    "loader-utils": "^3.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.3.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   }
 }
